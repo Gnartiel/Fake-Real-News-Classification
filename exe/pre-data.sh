@@ -4,7 +4,7 @@ git clone https://github.com/UKPLab/sentence-transformers.git
 cd sentence-transformers
 pip install -e .
 cd ../Fake-Real-News-Classification
-pip install -r requirements.txt
+pip install -r requirement.txt
 mkdir data
 cd data
 gdown 1zCjH1YsGgEVgegTl-RVOMwaEy_7p3Uht
