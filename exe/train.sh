@@ -10,6 +10,6 @@ mkdir data
 cd data
 gdown 1zCjH1YsGgEVgegTl-RVOMwaEy_7p3Uht
 python -m zipfile -e Dataset-Fake-Real-News-Gathering.zip .
-cd .
+cd ..
 python src/data_transform.py
 python src/train-sentence-BERT.py
