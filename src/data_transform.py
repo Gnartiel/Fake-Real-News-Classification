@@ -64,7 +64,7 @@ def main():
         dataset[split] = dataset[split].map(split_sentences_in_context, num_proc= 8)
         dataset[split] = dataset[split].map(retrieval_top_k, fn_kwargs={"k": 3, "model": model})    
 
-    new_dataset.save_to_disk(os.path.join(path_root, 'data/Dataset-Fake-Real-News-Retrieval'))
+    dataset.save_to_disk(os.path.join(path_root, 'data/Dataset-Fake-Real-News-Retrieval'))
     
     os.system("cd data & zip -r Dataset-Fake-Real-News-Retrieval.zip Dataset-Fake-Real-News-Retrieval")
 
